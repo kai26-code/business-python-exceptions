@@ -1,6 +1,6 @@
 def get_valid_integer(prompt):
     """
-    Repeatedly prompt the user until a valid integer is entered.
+    Repeatedly prompts user until a valid integer is entered.
     """
     while True:
         try:
@@ -26,7 +26,7 @@ def main():
 
     # Check reorder condition
     if inventory_level < reorder_threshold:
-        print("\n⚠️ Reorder Alert: Inventory is below the minimum threshold.")
+        print("\nReorder Alert: Inventory is below the minimum threshold.")
     else:
         print("\nInventory level is sufficient.")
 
@@ -41,6 +41,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-# This program validates inventory inputs using exception handling.
+# Validates inventory inputs using exception.
 # It alerts the user when inventory falls below the reorder threshold
 # and safely handles division errors.

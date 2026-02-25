@@ -1,17 +1,9 @@
 def get_valid_number(prompt, number_type):
-    """
-    Prompt the user for input and validate it.
-    Keeps asking until a valid number of specified type is entered.
-    
-    :param prompt: The message displayed to the user
-    :param number_type: The type to convert input into (int or float)
-    :return: Validated number (int or float)
-    """
     while True:
         try:
             value = number_type(input(prompt))
             
-            # Optional business rule: prevent negative values
+            # prevent negative values
             if value < 0:
                 print("Value cannot be negative. Please try again.")
                 continue
@@ -39,6 +31,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-# This program validates sales input data (units sold and price per unit) 
-# using exception handling and loops. It prevents invalid or negative entries 
+# validates sales input data (units sold and price per unit) 
+# using exception and loops. It prevents invalid or negative entries 
 # and calculates total revenue. 

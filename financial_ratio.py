@@ -6,7 +6,7 @@ def main():
             profit = float(input("Enter total profit: ").strip())
             revenue = float(input("Enter total revenue: ").strip())
 
-            # Attempt ratio calculation (may raise ZeroDivisionError)
+            # ratio calculation (may raise ZeroDivisionError)
             ratio = profit / revenue
 
         except ValueError:
@@ -26,6 +26,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-# This program calculates profit margin (profit / revenue).
+# calculates profit margin (profit / revenue).
 # It demonstrates defensive programming using try-except-else,
 # handling ValueError and ZeroDivisionError.    

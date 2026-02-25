@@ -21,7 +21,7 @@ def main():
 
     customer_age = get_customer_age()
 
-    # Simulating a NameError by referencing a variable
+    # Simulating NameError by referencing a variable
     # that was never defined
     try:
         if customer_age >= minimum_age:   # minimum_age not defined yet
@@ -33,10 +33,10 @@ def main():
         print("System error detected: minimum age requirement not defined.")
         print("Defining minimum age requirement now...\n")
 
-        # Now define the missing variable properly
+        # Now defining the missing variable properly
         minimum_age = 18
 
-        # Re-check eligibility after fixing the error
+        # Recheck eligibility after fixing the error
         if customer_age >= minimum_age:
             print("Customer is eligible for the promotion.")
         else:
@@ -46,6 +46,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-# This program validates customer age input using exception handling.
-# It determines eligibility for age-restricted promotions and demonstrates
+# validates customer age input using exceptions.
+# It determines eligibility for age restricted promotions and demonstrates
 # handling both ValueError and NameError.    
